@@ -24,7 +24,7 @@ By the end of this lab, you should be able to:
 
 - **Node.js:** To run your JavaScript files from the command line.
 - **VSCode:** To write and execute your JavaScript code.
-- **GitHub:** You will fork and clone the provided repository to get started.
+- **GitHub:** You will fork and clone the provided repository to get started. https://github.com/learn-co-curriculum/phase-0-js-arrays-lab.git
 
 ## Instructions
 
