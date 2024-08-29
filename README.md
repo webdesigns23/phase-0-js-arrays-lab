@@ -2,22 +2,19 @@
 
 ## Overview
 
-In this lab, you will build a product inventory management system for an online store. The system will enable you to store, retrieve, update, and delete product information. This exercise will help you practice array operations and improve your problem-solving skills in a real-world context.
+In this lab, you will create a simple system to manage a store's product inventory. You will use JavaScript arrays to store, update, and remove product information. This practice will help you get comfortable with basic array operations.
 
 ### Scenario
 
-You have been hired as a junior developer at an online retail company. The company needs a system to manage its product inventory efficiently. Your task is to build this system using JavaScript arrays. The system should handle operations like adding new products, updating existing product information, retrieving specific product details, checking product availability, and removing products that are out of stock.
+As a new junior developer at an online store, you are asked to help manage the product inventory. You will build a basic system using arrays to handle tasks like adding products, updating product names, and removing products.
 
 ### Objective
 
 By the end of this lab, you should be able to:
 
 - Declare and initialize an array to store product data.
-- Add new product information to the array.
 - Access and print specific product details using their index.
 - Modify existing product information.
-- Check product availability.
-- Calculate the total inventory value.
 - Remove a product from the array.
 
 ## Tools and Resources
@@ -41,35 +38,21 @@ By the end of this lab, you should be able to:
 ### Create the Product Inventory Array
 
 1. Open the `inventoryManagement.js` file in VS Code.
-2. Declare and initialize an array named `products` with the following product data:
-   ```javascript
-   let products = [
-     ["Laptop", "Electronics", 10, 999.99],
-     ["Phone", "Electronics", 25, 699.99],
-     ["Headphones", "Accessories", 50, 199.99],
-     ["Monitor", "Electronics", 15, 299.99]
-   ];
-   ```
 
-### Access Product Information
+2. **Create the Product Inventory Array**
+   - Open the `inventoryManagement.js` file in VS Code.
+   - Create an array called `products` to store product names. Use the following four strings:
+     - "Laptop"
+     - "Phone"
+     - "Headphones"
+     - "Monitor"
 
-1. Create a function called `logFirstProduct` that will console log the details of the first product using its index.
+3. **Access Product Information**
+   - Write a function called `logFirstProduct` to console log the details of the first product in the array.
 
-### Modify Product Information
+4. **Update Product Information**
+   - Write a function called `updateProductName` to change the name of a product. This function should take the product's position in the array and the new name as arguments.
 
-1. Create a function called `updateProductQuantity` that updates the quantity of a product. The function should take a product and a new quantity as arguments.
+5. **Remove a Product**
+   - Write a function called `removeLastProduct` to remove the last product from the array.
 
-### Check Product Availability
-
-1. Create a function called `checkProductAvailability` that checks if a product is available (quantity > 0). The function should take a product from the array as an argument. If the product is available, console log "Product is available", otherwise console log "Product is out of stock".
-
-### Calculate Total Inventory Value
-
-1. Create a function called `calculateTotalInventoryValue` that calculates and console logs the total value of all products in the inventory. The function should take the `products` array as an argument. Add a console log at the end of the function to print out the total value in this format:
-   ```sh
-   "Total Inventory Value: $" + totalValue
-   ```
-
-### Remove a Product
-
-1. Create a function called `removeLastProduct` that removes the last product from the array.
