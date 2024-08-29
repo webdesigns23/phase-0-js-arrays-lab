@@ -1,4 +1,4 @@
-const { products, logFirstProduct, updateProductName, removeLastProduct } = require('../inventoryManagement');
+const { products, logFirstProduct, updateProductName, removeLastProduct, addProduct } = require('../inventoryManagement');
 
 describe('Product Inventory Management System', () => {
     
@@ -23,5 +23,9 @@ describe('Product Inventory Management System', () => {
         removeLastProduct();
         expect(products).toEqual(["Laptop", "Phone", "Headphones"]);
     });
-});
 
+    test('addProduct should add a new product to the array', () => {
+        addProduct("Tablet");
+        expect(products[products.length - 1]).toBe("Tablet");
+    });
+});
